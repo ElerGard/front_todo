@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Todo list</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/index.css">
+		<script
+		src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+		crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<section class="todoapp">
+			<header class="header">
+				<h1 id="list-name">todos</h1>
+				<input class="new-todo" placeholder="What needs to be done?" autofocus>
+			</header>
+			<section class="main">
+				<input id="toggle-all" class="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+				<ul class="todo-list">
+				</ul>
+			</section>
+			<footer class="footer">
+				<span class="todo-count"><strong>0</strong> item left</span>
+				<ul class="filters">
+					<li>
+						<a class="selected" href="/#/">All</a>
+					</li>
+					<li>
+						<a href="/#/active">Active</a>
+					</li>
+					<li>
+						<a href="/#/completed">Completed</a>
+					</li>
+				</ul>
+				<button class="clear-completed hidden">Clear completed</button>
+			</footer>
+		</section>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+			
+			<h1><a href ="user.html">Sign up/Sign In</a></h1>
+		</footer>
+		<script src="js/app.js"></script>
+	</body>
+</html>
